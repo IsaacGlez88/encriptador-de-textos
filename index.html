@@ -1,35 +1,51 @@
 <!DOCTYPE html>
 <html lang="es-mx">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Encriptador de Texto</title>
-    <link rel="stylesheet" href="style.css">
-    <link rel="shortcut icon" href="./img/favicon.png" type="image/x-icon">
-</head>
-<body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Encriptador </title>
+    <link rel="shortcut icon" href="img/favicon.png" type="image/x-icon" />
+    <link rel="stylesheet" href="style.css" />
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+  </head>
+  <body>
     <div class="container">
-        <div class="encriptar">
-            <textarea name="texto" class="texto" id="texto" cols="30" rows="10" placeholder="Ingresa el Texto aqui"></textarea>
-        
-            <div class="terminos">
-                <p> Solo letras minusculas y sin acento</p>
-                </div>
-                <div class="botones">
-                    <button class="boton-para-encriptar" type="button" onclick="encriptacion()">Encriptar</button>
-                    <input type="button" class="boton-para-desencriptar" value="Desencriptar" onclick="desencriptacion()"></input>
-                
-                </div>
-             </div>
-             <div class="encriptado">
-                <img src="./img/persona.png" alt="" id="personas">
-                <div class="texto-encriptado" id="texto-encriptado">
-                    <h2 id="texto-del-mensaje">Ningun mensaje encontrado</h2>
-                    <p id="parafo">Ingresa el texto que deseas incriptar o desencriptar</p>
-                    
+      <div class="encriptar">
+        <textarea
+          name="texto"
+          class="texto"
+          id="texto"
+          cols="30"
+          rows="10"
+          placeholder="Ingresa el texto aquí"
+        ></textarea>
+
+        <div class="terminos">
+          <p>Solo letras minúsculas y sin acentos.</p>
         </div>
+        <div class="botones">
+          <button class="boton-para-encriptar" type="button" onclick="encriptacion()">
+            Encriptar
+          </button>
+          <input
+            type="button"
+            class="boton-para-desencriptar"
+            value="Desencriptar"
+            onclick="desencriptacion()"
+          />
+        </div>
+      </div>
+      <div class="encriptado">
+        <img src="img/persona.png" alt="" id="personas" />
+        <div class="texto-encriptado" id="texto-encriptado">
+          <h2 id="titulo-mensaje">Ningún mensaje fue encontrado</h2>
+          <p id="parrafo">
+            Ingresa el texto que deseas encriptar o desencriptar
+          </p>
+        </div>
+      </div>
     </div>
-</div>
-</body>
-<script src="app.js"></script>
+  </body>
+  <script src="app.js"></script>
 </html>

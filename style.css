@@ -1,46 +1,41 @@
 * {
-    
     margin: 0;
     padding: 0;
-    
-}
-
-
-.container {
-    background: #f3f5fc;
+  }
+  
+  .container {
     position: relative;
     width: 100vw;
     height: 100vh;
-}
-
-.texto {
+    background: #f3f5fc;
+  }
+  
+  .texto {
     position: absolute;
-    font-family: "Inter";
     width: 42%;
     height: 60%;
     left: 12%;
     top: 15%;
     border: none;
+    font-family: "Inter";
     font-style: normal;
     font-weight: 400;
     font-size: 32px;
     line-height: 150%;
     background-color: #f3f5fc;
-    
-}
-
-.texto::placeholder {
+  }
+  
+  .texto::placeholder {
     color: #0a3871;
-
-}
-
-.texto:focus,
-.texto:active {
+  }
+  
+  .texto:focus,
+  .texto:active {
     border: none;
     outline: none;
-}
-
-.terminos {
+  }
+  
+  .terminos {
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -50,9 +45,9 @@
     width: 80%;
     left: 12%;
     top: 80%;
-}
-
-.terminos p {
+  }
+  
+  .terminos p {
     font-family: "Inter";
     font-style: normal;
     font-weight: 400;
@@ -63,9 +58,9 @@
     flex: none;
     order: 1;
     flex-grow: 0;
-}
-
-.botones {
+  }
+  
+  .botones {
     display: flex;
     flex-direction: row;
     align-items: flex-start;
@@ -74,12 +69,13 @@
     width: 80%;
     left: 12%;
     top: 82%;
-}
-
-.boton-para-encriptar {
+  }
+  
+  .boton-para-encriptar {
     align-items: center;
     justify-content: center;
     padding: 2%;
+    gap: 8px;
     width: 25%;
     background-color: #0a3871;
     border-radius: 24px;
@@ -87,10 +83,10 @@
     font-size: 18px;
     line-height: 19px;
     text-align: center;
-    color: #f3f5fc;
-}
-
-.boton-para-desencriptar {
+    color: #fff;
+  }
+  
+  .boton-para-desencriptar {
     box-sizing: border-box;
     display: flex;
     flex-direction: row;
@@ -108,16 +104,16 @@
     line-height: 19px;
     text-align: center;
     color: #0a3871;
-}
-
-.boton-para-desencriptar:hover,
-.boton-para-encriptar:hover {
+  }
+  
+  .boton-para-desencriptar:hover,
+  .boton-para-encriptar:hover {
     margin: 0.3%;
     width: 24.5%;
     padding: 1.8%;
-}
-
-.encriptado {
+  }
+  
+  .encriptado {
     display: flex;
     justify-content: center;
     position: absolute;
@@ -128,13 +124,12 @@
     background: #fff;
     box-shadow: 0px 24px 32px -8px rgba(0, 0, 0, 0.08);
     border-radius: 32px;
-}
-
-.texto-encriptado {
+  }
+  
+  .texto-encriptado {
     display: flex;
     flex-direction: column;
     align-items: center;
-    border: none;
     justify-content: center;
     padding: 1%;
     gap: 16px;
@@ -142,9 +137,9 @@
     width: 100%;
     top: 65%;
     text-align: center;
-}
-
-.texto-encriptado h2 {
+  }
+  
+  .texto-encriptado h2 {
     width: 60%;
     font-family: "Inter";
     font-style: normal;
@@ -153,10 +148,9 @@
     line-height: 120%;
     text-align: center;
     color: #343a40;
-    border: none;
-}
-
-.texto-encriptado p {
+  }
+  
+  .texto-encriptado p {
     width: 80%;
     font-family: "Inter";
     font-style: normal;
@@ -165,71 +159,67 @@
     line-height: 150%;
     text-align: center;
     color: #495057;
-    border: none;
-}
-
-.encriptado img {
+  }
+  
+  .encriptado img {
     position: absolute;
     width: 80%;
     height: 50%;
     top: 15%;
-}
-
-/* Diseño responsivo*/
-
-@media (max-width: 57.5em){
+  }
+  
+  /* Diseño resposivo */
+  @media (max-width: 57.5em) {
     .container {
-        display: flex;
-        flex-direction: row;
+      display: flex;
+      flex-direction: row;
     }
     .encriptar {
-        width: 100%;
-    
+      width: 100%;
     }
     .texto {
-        width: 80%;
-        height: 60%;
-        left: 10%;
-        top: 5%;
+      width: 80%;
+      height: 60%;
+      left: 10%;
+      top: 5%;
     }
     .terminos {
-        width: 80%;
-        left: 10%;
-        top: 67%;
+      width: 80%;
+      left: 10%;
+      top: 67%;
     }
     .terminos p {
-        font-size: 16%;
+      font-size: 16px;
     }
     .botones {
-        width: 80%;
-        left: 10%;
-        top: 70;
+      width: 80%;
+      left: 10%;
+      top: 70%;
     }
     .boton-para-encriptar,
     .boton-para-desencriptar {
-        width: 48%;
-        border-radius: 16px;
+      width: 48%;
+      border-radius: 16px;
     }
     .boton-para-encriptar:hover,
     .boton-para-desencriptar:hover {
-        margin: 0.3%;
-        width: 47.5%;
-        padding: 1.8%;
+      margin: 0.3%;
+      width: 47.5%;
+      padding: 1.8%;
     }
     .encriptado {
-        width: 80%;
-        height: 15%;
-        left: 10%;
-        top: 80%;
-
+      width: 80%;
+      height: 15%;
+      left: 10%;
+      top: 80%;
     }
     .texto-encriptado {
-        width: 100%;
-        top: 5%;
+      width: 100%;
+      top: 5%;
     }
     .encriptado img {
-        top: 0;
-        display: none;
-        
+      top: 0;
+      display: none;
+      visibility: hidden;
     }
-}
+  }
